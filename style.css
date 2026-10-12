@@ -1,0 +1,250 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f8ff;
+    color: #183153;
+    line-height: 1.6;
+}
+
+header {
+    background: #123c69;
+    color: white;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header h2 {
+    font-size: 26px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 18px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #ffd166;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    padding: 65px 8%;
+    background: linear-gradient(135deg, #d9f0ff, #ffffff);
+}
+
+.hero div {
+    flex: 1;
+}
+
+.hero img {
+    width: 48%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+.tag {
+    color: #087eae;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+h1 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin: 15px 0;
+}
+
+h1 span {
+    color: #0786c7;
+}
+
+.hero p {
+    margin-bottom: 25px;
+    color: #52677f;
+}
+
+.button,
+button {
+    display: inline-block;
+    background: #087eae;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.button:hover,
+button:hover {
+    background: #075985;
+}
+
+.about,
+.planes,
+.facts,
+.contact {
+    padding: 50px 8%;
+    text-align: center;
+}
+
+.about {
+    background: white;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+.about p {
+    max-width: 700px;
+    margin: 12px auto;
+}
+
+hr {
+    border: 0;
+    border-top: 2px solid #d9e9f5;
+    margin: 20px auto;
+    max-width: 200px;
+}
+
+.planes {
+    background: #e3f4ff;
+}
+
+.subtitle {
+    margin-bottom: 25px;
+    color: #52677f;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    width: 30%;
+    min-width: 220px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px #18315315;
+    padding-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+
+.card h3 {
+    color: #087eae;
+    margin: 15px 10px 8px;
+}
+
+.card p {
+    padding: 0 15px;
+    color: #52677f;
+    font-size: 14px;
+}
+
+.facts {
+    background: white;
+}
+
+.facts ul {
+    display: inline-block;
+    text-align: left;
+    margin: 15px auto;
+}
+
+.facts li {
+    margin: 8px 0;
+}
+
+.quote {
+    color: #087eae;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.contact {
+    background: #c8eaff;
+}
+
+.contact p {
+    margin-bottom: 20px;
+}
+
+footer {
+    background: #123c69;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+footer small {
+    color: #c8eaff;
+}
+
+@media (max-width: 700px) {
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 0 7px;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 40px 6%;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    .hero img {
+        width: 100%;
+        height: 230px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .about,
+    .planes,
+    .facts,
+    .contact {
+        padding: 40px 6%;
+    }
+}
